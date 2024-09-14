@@ -47,7 +47,6 @@ class MerchantAuthController extends Controller
             'company_name' => $validatedData['company_name'],
             'email' => $validatedData['email'],
             'password' => Hash::make($validatedData['password']),
-            'role' => 'merchant', // You can set the role here
         ]);
 
         // Log the merchant in after registration

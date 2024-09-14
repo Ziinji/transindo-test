@@ -47,7 +47,6 @@ class CustomerAuthController extends Controller
             'name' => $validatedData['name'],
             'email' => $validatedData['email'],
             'password' => Hash::make($validatedData['password']),
-            'role' => 'customer', // You can set the role here
         ]);
 
         // Log the customer in
